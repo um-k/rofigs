@@ -75,7 +75,8 @@ class ROFIGS(BaseEstimator):
         max_splits: int = 75,                   # max. total number of splits across all trees            
         max_trees: int = None,                  # max. number of trees
         random_state = None,
-        verbose = False,                       
+        verbose = False,
+        num_repetitions = 5,                    # number of tries/repetitions in each iteration (also referred to as "r")                       
     ):
         
         super().__init__()
@@ -86,8 +87,8 @@ class ROFIGS(BaseEstimator):
         self.max_trees = max_trees
         self.random_state = random_state
         self.verbose = verbose                  # whether we print info during model training
-
-        self.num_repetitions = 5                # 5 tries/repetitions in each iteration
+        self.num_repetitions = num_repetitions  # 5 tries/repetitions in each iteration
+        
         self.iteration = 1                      # used for changing the subset of features used for splitting 
         self.non_zero_total = 0                 # average number of features per split that are *actually* used for splitting                    
         self.feature_combinations = []          # saving all combinations of features that appear in the model
