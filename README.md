@@ -9,6 +9,20 @@ Official code for the paper [RO-FIGS: Efficient and Expressive Tree-Based Ensemb
 **Supplementary material:** Supplementary material that accompanies the paper has been added to the `Supplementary_material.pdf`. This includes additional experiments, data, and analysis referenced in the paper.
 
 
+## Citation
+For attribution in academic contexts, please cite this work as:
+```
+@inproceedings{matjasec2025,
+  author    = {Matjašec, Urška and Simidjievski, Nikola and Jamnik, Mateja},
+  booktitle = {2025 IEEE Symposium on Trustworthy, Explainable and Responsible Computational Intelligence (CITREx)}, 
+  title     = {{RO-FIGS}: Efficient and Expressive Tree-Based Ensembles for Tabular Data}, 
+  year      = {2025},
+  pages     = {1-7},
+  doi       = {10.1109/CITREx64975.2025.10974939}
+}
+```
+
+
 ## Installation
 
 To install the required dependencies, run:
